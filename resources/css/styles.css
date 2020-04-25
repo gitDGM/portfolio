@@ -39,7 +39,7 @@ body {
     }
 
 #pagina #menuDesplegable {
-    z-index:99;
+    z-index: 99;
     position: fixed;
     height: 100%;
     width: 100%;
@@ -74,39 +74,56 @@ body {
             color: rgba(114, 114, 114, 0.48);
         }
 
-#pagina main .apartados {
-    position: relative;
+#pagina main {
     display: flex;
-    width: 100%;
-    clear: both;
+    flex-direction: column;
 }
 
-    #pagina main .apartados .contenido_seccion {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        width: 80%;
-        padding-top: 25%;
-        padding-bottom: 25%;
+
+    #pagina main .apartados {
+        position: relative;
+        align-content: stretch;
+        width: 100%;
+        clear: both;
     }
 
-#pagina main #home #info_personal img {
-    margin: auto;
-    height: 250px;
-    background-color: white;
-    border-radius: 130px;
-}
+        #pagina main .apartados .contenido_seccion {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            width: 80%;
+            padding-top: 33%;
+            padding-bottom: 33%;
+        }
 
-#pagina main #home #info_personal h2 {
-    margin-top: 20px;
-    text-align: center;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-}
+        #pagina main .apartados .nombre_apartado {
+            position: absolute;
+            top: 40px;
+            left: 20px;
+            font-size: 30px;
+        }
 
-#pagina main #home #info_personal .boton:hover {
-    box-shadow: 0px 0px 50px 0px rgba(0,0,0,1);
-}
+    #pagina main #home #info_personal img {
+        margin: auto;
+        height: 250px;
+        background-color: white;
+        border-radius: 130px;
+    }
+
+    #pagina main #home #info_personal h2 {
+        margin-top: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+    }
+
+    #pagina main #home #info_personal .boton:hover {
+        box-shadow: 0px 0px 50px 0px rgba(0,0,0,1);
+    }
+
+
+
+
 
 /* CLASES */
 .boton {
