@@ -1,6 +1,17 @@
+@font-face {
+    font-family: "Billyer";
+    src: url(../fonts/Billyer.ttf);
+}
+
+@font-face {
+    font-family: "Coolvetica";
+    src: url(../fonts/coolvetica.ttf);
+}
+
 * {
     margin: 0px;
     padding: 0px;
+    font-family: "Coolvetica", arial;
 }
 
 html, body {
@@ -9,8 +20,29 @@ html, body {
 }
 
 #pagina {
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 100%;
+    height: 100%;
     background-color: lightblue;
 }
+
+    #pagina #cabecera {
+        display: flex;
+        height: 15%;
+        margin: auto;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+        #pagina #cabecera h1 {
+            font-family: Billyer;
+            width: 100%;
+            line-height: 100%;
+            font-size: 100px;
+            text-align: center;
+            margin: auto;
+        }
+
+        #pagina #cabecera #desplegableMenu {
+            width: 100%;
+            height: 25%;
+        }
