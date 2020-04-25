@@ -39,6 +39,7 @@ body {
     }
 
 #pagina #menuDesplegable {
+    z-index:99;
     position: fixed;
     height: 100%;
     width: 100%;
