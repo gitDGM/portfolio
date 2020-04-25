@@ -8,6 +8,11 @@
     src: url(../fonts/coolvetica.ttf);
 }
 
+@font-face {
+    font-family: "Coolvetica-Comp";
+    src: url(../fonts/coolvetica_compressed.ttf);
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -85,6 +90,7 @@ body {
         align-content: stretch;
         width: 100%;
         clear: both;
+        border-bottom: 1px white solid;
     }
 
         #pagina main .apartados .contenido_seccion {
@@ -121,20 +127,54 @@ body {
         box-shadow: 0px 0px 50px 0px rgba(0,0,0,1);
     }
 
+    #pagina main #about .contenido_seccion img {
+        margin: auto;
+        height: 100px;
+        background-color: white;
+        border-radius: 130px;
+    }
+
+    #pagina main #about .contenido_seccion .bubble {
+        padding: 20px;
+        position: relative;
+        top: 20px;
+        border-radius: 8px 8px 8px 8px;
+    }
+
+        #pagina main #about .contenido_seccion .bubble:after {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: calc(50% - 20px);
+            border-top: 20px solid blue;
+            border-top-color: inherit;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            transform: rotate(180deg);
+        }
+
+    #pagina main #about .contenido_seccion #info_about {
+        color: black;
+        text-align: center;
+        font-size: 20px;
+    }
+    #pagina main #about .contenido_seccion #info_about .boton {
+    display: block;
+    width: max-content;
+    margin-top: 30px;
+    }
 
 
-
-
-/* CLASES */
-.boton {
-    cursor: pointer;
-    margin: auto;
-    padding: 10px 25px 10px 25px;
-    background-color: #ff4c60;
-    border-radius: 25px;
-    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.75);
-    text-decoration: none;
-}
+        /* CLASES */
+        .boton {
+            cursor: pointer;
+            margin: auto;
+            padding: 10px 25px 10px 25px;
+            background-color: #ff4c60;
+            border-radius: 25px;
+            box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.75);
+            text-decoration: none;
+        }
 
 /* ANIMACIONES */
 .animateMenu {
