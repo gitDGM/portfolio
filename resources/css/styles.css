@@ -27,7 +27,6 @@ body {
 
 #pagina #cabecera {
     display: flex;
-    position: absolute;
 }
 
     #pagina #cabecera h1, #pagina #cabecera #botonMenuLateral {
@@ -39,41 +38,85 @@ body {
         text-align: center;
     }
 
-    #pagina #menuDesplegable {
-        position: fixed;
-        height: 100%;
-        width: 100%;
-        top: 0px;
-        left: -100%;
-        transition: all 1s ease;
+#pagina #menuDesplegable {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: -100%;
+    transition: all 1s ease;
+}
+
+
+    #pagina #menuDesplegable #contenidoMenu, #pagina #cabecera #menuDesplegable #quitMenu {
+        float: left;
     }
 
+    #pagina #menuDesplegable #contenidoMenu {
+        height: 100%;
+        width: 85%;
+        background-image: url(../images/fondo_desplegable.jpg);
+        background-size: 100% 100%;
+        box-shadow: 6px 0px 55px -9px rgba(0,0,0,0.75);
+    }
 
-        #pagina #menuDesplegable #contenidoMenu, #pagina #cabecera #menuDesplegable #quitMenu {
-            float: left;
+    #pagina #menuDesplegable #quitMenu {
+        height: 100%;
+        width: 15%;
+        text-align: center;
+        display: flex;
+    }
+
+        #pagina #menuDesplegable #quitMenu > i {
+            font-size: 30px;
+            margin: auto;
+            color: rgba(114, 114, 114, 0.48);
         }
 
-        #pagina #menuDesplegable #contenidoMenu {
-            height: 100%;
-            width: 85%;
-            background-image: url(../images/fondo_desplegable.jpg);
-            background-size: 100% 100%;
-            box-shadow: 6px 0px 55px -9px rgba(0,0,0,0.75);
+#pagina main .apartados {
+    display: flex;
+    width: 100%;
+    clear: both;
+}
+
+    #pagina main .apartados .contenido_seccion {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 80%;
+        padding-top: 50%;
+        padding-bottom: 50%;
+    }
+
+        #pagina main #home #info_personal img {
+            margin: auto;
+            height: 250px;
+            background-color: white;
+            border-radius: 130px;
         }
 
-        #pagina #menuDesplegable #quitMenu {
-            height: 100%;
-            width: 15%;
+        #pagina main #home #info_personal h2 {
+            margin-top: 20px;
             text-align: center;
-            display: flex;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+        #pagina main #home #info_personal .boton:hover {
+            box-shadow: 0px 0px 50px 0px rgba(0,0,0,1);
         }
 
-            #pagina #menuDesplegable #quitMenu > i {
-                font-size: 30px;
-                margin: auto;
-                color: rgba(114, 114, 114, 0.48);
-            }
+/* CLASES */
+.boton {
+    cursor: pointer;
+    margin: auto;
+    padding: 10px 25px 10px 25px;
+    background-color: #ff4c60;
+    border-radius: 25px;
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.75);
+    text-decoration: none;
+}
 
+/* ANIMACIONES */
 .animateMenu {
     left: 0% !important;
 }
