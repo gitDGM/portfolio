@@ -1,0 +1,16 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#pagina {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: lightblue;
+}
