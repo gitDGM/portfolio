@@ -85,8 +85,8 @@ body {
         flex-direction: column;
         margin: auto;
         width: 80%;
-        padding-top: 50%;
-        padding-bottom: 50%;
+        padding-top: 25%;
+        padding-bottom: 25%;
     }
 
 #pagina main #home #info_personal img {
