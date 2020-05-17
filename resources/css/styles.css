@@ -122,9 +122,16 @@ body {
         border-radius: 130px;
     }
 
-    #pagina main #home #info_personal h2 {
+    #pagina main #home #info_personal h1 {
         margin-top: 20px;
+        font-size: 28px !important;
+    }
+
+    #pagina main #home #info_personal h2, #pagina main #home #info_personal h1 {
+        
         text-align: center;
+        
+        font-size: 22px;
         margin-bottom: 20px;
         letter-spacing: 1px;
     }
