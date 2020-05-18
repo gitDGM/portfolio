@@ -342,6 +342,10 @@ footer .madeby {
     text-decoration: none;
 }
 
+.boton:focus {
+    outline: none;
+}
+
 /* CLASES DE ANIMACIONES */
 .animateMenu {
     left: 0% !important;
