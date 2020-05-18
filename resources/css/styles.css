@@ -170,10 +170,8 @@ body {
         font-size: 28px !important;
     }
 
-    #pagina main #home #info_personal h2, #pagina main #home #info_personal h1 {
-        
-        text-align: center;
-        
+    #pagina main #home #info_personal h2, #pagina main #home #info_personal h1 {        
+        text-align: center;        
         font-size: 22px;
         margin-bottom: 20px;
         letter-spacing: 1px;
@@ -182,6 +180,31 @@ body {
     #pagina main #home #info_personal .boton:hover {
         box-shadow: 0px 0px 50px 0px rgba(0,0,0,1);
     }
+
+    
+    #pagina main #home #info_personal .social-networks {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 40px;
+    }
+
+        #pagina main #home #info_personal .social-networks .social-network {
+            display:  block;
+            font-size: 30px;
+            background-color: #FFFFFF;
+            border-radius: 25px;
+            padding: 5px;
+            width: 40px;
+            line-height: 40px;
+            text-align: center;
+            box-shadow: 6px 0px 55px -9px rgba(0,0,0,0.75);
+        }
+
+            #pagina main #home #info_personal .social-networks .social-network i {
+                color: #1e1e1e;
+            }
+
 
     #pagina main #about .contenido_seccion img {
         margin: auto;
@@ -252,10 +275,57 @@ body {
             }
 
 
+#pagina main #contact .contenido_seccion form label {
+    display: block;
+    width: calc(100% - 40px);
+    background-color: #3a3a3a;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 50px;
+    box-shadow: 6px 0px 55px -9px rgba(0,0,0,0.75);
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
 
+    #pagina main #contact .contenido_seccion form label input {
+        width: calc(100% - 15px);
+        line-height: 50px;
+        font-size: 20px;
+        background-color: transparent;
+        border: none;
+    }
+
+    #pagina main #contact .contenido_seccion form label textarea {
+        width: 100%;
+        height: 300px;
+        resize: none;
+        line-height: 50px;
+        font-size: 20px;
+        background-color: transparent;
+        border: none;
+    }
+
+    #pagina main #contact .contenido_seccion form div {
+        display: flex;
+        justify-content: center;
+    }
+
+    #pagina main #contact .contenido_seccion form button[type="submit"] {
+       border: none;
+       margin: 0 auto;
+       width: max-content;
+       font-size: 16px;
+    }
+
+    #pagina main #contact .contenido_seccion form label input:focus, #pagina main #contact .contenido_seccion form label textarea:focus  {
+        outline: none;
+    }
+
+    
 
 
 footer .madeby {
+    font-size: 14px;
     line-height: 60px;
     letter-spacing: 1px;
     text-align: center;

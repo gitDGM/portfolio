@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <script src="https://kit.fontawesome.com/4f8f97cd7a.js" crossorigin="anonymous"></script>
     <script src="./resources/js/scripts.js" type="text/javascript"></script>
 </head>
+
 <body>
     <div id="pagina">
         <!-- CABECERA -->
@@ -20,16 +22,19 @@
         <div id="menuDesplegable">
             <div id="contenidoMenu">
                 <h1 class="logo">DGM</h1>
+                <!-- MENU NAVEGADOR-->
                 <nav>
                     <ul>
                         <li class="nav-item"><a href="#home">Home</a></li>
                         <li class="nav-item"><a href="#projects">Projects</a></li>
                         <li class="nav-item"><a href="#services">Services</a></li>
                         <li class="nav-item"><a href="#skills">Skills</a></li>
+                        <li class="nav-item"><a href="#experience">Experience</a></li>
                         <li class="nav-item"><a href="#about">About me</a></li>
                         <li class="nav-item"><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
+                <!-- FIN MENU NAVEGADOR-->
             </div>
             <div id="quitMenu">
                 <a href="#"><i class="fas fa-arrow-left"></i></a>
@@ -38,24 +43,36 @@
         <!-- FIN DESPLEGABLE MENU-->
         <!-- PRINCIPAL -->
         <main>
+            <!-- HOME-->
             <section id="home" class="apartado">
                 <div id="info_personal" class="contenido_seccion">
                     <img src="./resources/images/persona.png" alt="Diego Gómez Moreno" />
                     <h1>Diego Gómez Moreno</h1>
                     <h2>Junior Web Developer</h2>
                     <a href="" class="boton">Contáctame</a>
+                    <ul class="social-networks">
+                        <li><a href="#" class="social-network" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="#" class="social-network" title="GitHub"><i class="fab fa-github-square"></i></a>
+                        </li>
+                        <li><a href="#" class="social-network" title="StackOverflow"><i
+                                    class="fab fa-stack-overflow"></i></a></li>
+                    </ul>
                 </div>
-            </section>            
+            </section>
+            <!-- FIN HOME-->
+            <!-- PROJECTS -->
             <section id="projects" class="apartado">
-                <div class="nombre_apartado">Trabajos</div>
+                <div class="nombre_apartado">Projects</div>
                 <div class="contenido_seccion">
                     <p>
-                        WORK IN PROGRESS 
+                        WORK IN PROGRESS
                     </p>
                 </div>
-            </section>            
+            </section>
+            <!-- FIN PROJECTS -->
+            <!-- SERVICES -->
             <section id="services" class="apartado">
-                <div class="nombre_apartado">Servicios</div>
+                <div class="nombre_apartado">Services</div>
                 <div class="contenido_seccion">
                     <div class="servicio">
                         <div class="icono_servicio"><i class="fas fa-cogs"></i></div>
@@ -78,40 +95,71 @@
                         <p class="desc_servicio">Descripción del servicio.</p>
                     </div>
                 </div>
-            </section>            
+            </section>
+            <!-- FIN SERVICES -->
+            <!-- SKILLS -->
             <section id="skills" class="apartado">
-                <div class="nombre_apartado">Experiencia</div>
+                <div class="nombre_apartado">Skills</div>
                 <div class="contenido_seccion">
                     <p>
                         WORK IN PROGRESS
                     </p>
                 </div>
             </section>
+            <!-- FIN SKILLS -->
+            <!-- EXPERIENCE -->
+            <section id="experience" class="apartado">
+                <div class="nombre_apartado">Experience</div>
+                <div class="contenido_seccion">
+                    <p>
+                        WORK IN PROGRESS
+                    </p>
+                </div>
+            </section>
+            <!-- FIN EXPERIENCE -->
+            <!-- ABOUT ME -->
             <section id="about" class="apartado">
-                <div class="nombre_apartado">Sobre mí</div>
+                <div class="nombre_apartado">About me</div>
                 <div class="contenido_seccion">
                     <img src="./resources/images/persona.png" alt="Diego Gómez Moreno" />
                     <div id="info_about" class="bubble" style="background: white; border-color: white;">
-                    Soy Diego Gómez Moreno, Desarrollador Web Junior. He terminado mis estudios superiores y busco coger experiencia.
+                        Soy Diego Gómez Moreno, Desarrollador Web Junior. He terminado mis estudios superiores y busco
+                        coger experiencia.
                         <a href="" class="boton">Descargar CV</a>
                     </div>
                 </div>
             </section>
+            <!-- FIN ABOUT ME -->
+            <!-- CONTACT -->
             <section id="contact" class="apartado">
-                <div class="nombre_apartado">Contacto</div>
+                <div class="nombre_apartado">Contact</div>
                 <div class="contenido_seccion">
-                    <p>
-                        WORK IN PROGRESS
-                    </p>
+                    <!-- modify this form HTML and place wherever you want your form -->
+
+                    <form action="https://formspree.io/xknqobkp" method="POST">
+                        <label class="form-item">
+                            <input type="text" name="_replyto" placeholder="Your email:">
+                        </label>
+                        <label class="form-item">
+                            <textarea name="message" placeholder="Your message:"></textarea>
+                        </label>
+
+                        <!-- your other form fields go here -->
+                        <div>
+                            <button type="submit" class="boton">Send</button>
+                        </div>
+                    </form>
                 </div>
             </section>
+            <!-- FIN CONTACT -->
         </main>
         <!-- FIN PRINCIPAL -->
         <!-- PIE -->
         <footer>
-            <div class="madeby">&copy; Diego Gómez Moreno</div>
+            <div class="madeby">Desarrollado por Diego Gómez Moreno &copy; 2020</div>
         </footer>
         <!-- FIN PIE-->
     </div>
 </body>
+
 </html>
