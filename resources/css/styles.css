@@ -254,6 +254,13 @@ body {
 
 
 
+
+footer .madeby {
+    line-height: 60px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
 /* CLASES GLOBALES */
 .boton {
     cursor: pointer;
