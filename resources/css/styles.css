@@ -104,7 +104,7 @@ body {
         #pagina #menuDesplegable #contenidoMenu nav {
             width: 100%;
             margin-top: 20px;
-            height: 100%;
+            height: calc(100% - 120px);
             overflow-y: auto;
             text-align: center;
         }
