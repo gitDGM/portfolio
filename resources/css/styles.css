@@ -163,6 +163,7 @@ body {
         height: 250px;
         background-color: white;
         border-radius: 130px;
+        margin-top: 45px;
     }
 
     #pagina main #home #info_personal h1 {
@@ -207,38 +208,24 @@ body {
             }
 
 
-    #pagina main #about .contenido_seccion img {
-        margin: auto;
-        height: 100px;
-        background-color: white;
-        border-radius: 130px;
-    }
-
-    #pagina main #about .contenido_seccion .bubble {
-        padding: 20px;
-        position: relative;
-        top: 20px;
+    #pagina main #about .contenido_seccion #info_about {
+        color: black;
+        text-align: justify;
+        font-size: 18px;
+        margin: 20px 0px;
+        background-color: #FFFFFF;padding: 20px;
         border-radius: 8px 8px 8px 8px;
     }
 
-        #pagina main #about .contenido_seccion .bubble:after {
-            content: "";
-            position: absolute;
-            top: -10px;
-            left: calc(50% - 20px);
-            border-top: 20px solid blue;
-            border-top-color: inherit;
-            border-left: 20px solid transparent;
-            border-right: 20px solid transparent;
-            transform: rotate(180deg);
+        #pagina main #about .contenido_seccion #info_about img {
+            display: block;
+            margin-bottom: 10px;
+            margin: 0px calc(50% - 50px) 10px calc(50% - 50px);
+            height: 100px;
+            background-color: white;
+            border-radius: 130px;
+            border: 1px solid #000000;
         }
-
-    #pagina main #about .contenido_seccion #info_about {
-        color: black;
-        text-align: center;
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
 
         #pagina main #about .contenido_seccion #info_about .boton {
             display: block;
@@ -318,6 +305,10 @@ footer .madeby {
 
 
 @media screen and (min-width: 1000px) {
+    body::-webkit-scrollbar {
+        width: 0px;
+    }
+
     #pagina #cabecera #botonMenuLateral {
         display: none;
     }
@@ -365,12 +356,27 @@ footer .madeby {
         letter-spacing: 1px;
     }
 
+    #pagina #menuDesplegable #contenidoMenu nav .nav-item:hover a {
+        color: #ff4c60 !important;
+    }
+
     #pagina #menuDesplegable #quitMenu{
         display: none;
     }
 
     #pagina main #home #info_personal .social-networks {
         width: 50%;
+    }
+
+    #pagina main #about .contenido_seccion {
+        width: 60%;
+    }
+
+    #pagina main #about .contenido_seccion #info_about img {
+        height: 120px;
+        margin-left: 0px;
+        margin-right: 30px;
+        margin-bottom: 20px;
     }
 
     #pagina main #contact .contenido_seccion {
