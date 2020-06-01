@@ -113,6 +113,10 @@ body {
                 font-size: 30px;
             }
 
+            #pagina #menuDesplegable #contenidoMenu nav .nav-item:hover a {
+                color: #ff4c60 !important;
+            }
+
     #pagina #menuDesplegable #quitMenu {
         height: 100%;
         width: 15%;
@@ -216,6 +220,10 @@ body {
     #pagina main #skills .contenido_seccion .skill {
         height: max-content;
         margin-bottom: 20px;
+    }
+
+    #pagina main #skills .contenido_seccion .skill:hover {
+        cursor: pointer;
     }
 
     #pagina main #skills .contenido_seccion .skill .skill-info {
@@ -394,6 +402,28 @@ footer .madeby {
     outline: none;
 }
 
+.nivel-bajo {
+    color: #ff4c60;
+}
+
+.nivel-medio {
+    color: #ffb14c;
+}
+
+.nivel-alto {
+    color: #4cff6a;
+}
+
+@media screen and (max-width: 350px) { 
+    #pagina main #skills .contenido_seccion .skill:nth-of-type(3) .skill-info .skill-desc h3,  #pagina main #skills .contenido_seccion .skill:nth-of-type(6) .skill-info .skill-desc h3 {
+        font-size: 22px;
+    }
+
+    #pagina main #skills .contenido_seccion .skill:nth-of-type(3) .skill-info .skill-desc p, #pagina main #skills .contenido_seccion .skill:nth-of-type(6) .skill-info .skill-desc p {
+        line-height: 39px;
+    }
+}
+
 
 @media screen and (min-width: 1000px) {
     body::-webkit-scrollbar {
@@ -447,10 +477,6 @@ footer .madeby {
         letter-spacing: 1px;
     }
 
-    #pagina #menuDesplegable #contenidoMenu nav .nav-item:hover a {
-        color: #ff4c60 !important;
-    }
-
     #pagina #menuDesplegable #quitMenu{
         display: none;
     }
@@ -495,7 +521,7 @@ footer .madeby {
     }
 
     #pagina main #skills .contenido_seccion .skill {
-        width: calc(33% - 20px);
+        width: calc(33.3333% - 20px);
         margin: 10px;
     }
 
