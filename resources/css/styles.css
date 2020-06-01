@@ -247,18 +247,54 @@ body {
             padding: 5px 10px 5px 10px;
             height: calc(100% - 10px);
         }
-        #pagina main #skills .contenido_seccion .skill .skill-info .skill-desc *  {
-            color: #000000 !important;
+
+            #pagina main #skills .contenido_seccion .skill .skill-info .skill-desc *  {
+                color: #000000 !important;
+            }
+
+            #pagina main #skills .contenido_seccion .skill .skill-info .skill-desc h3 {
+                font-size: 28px;
+                letter-spacing: 1px;
+            }
+
+            #pagina main #skills .contenido_seccion .skill .skill-info .skill-desc p {
+                line-height: 33px;
+            }
+
+        #pagina main #skills .contenido_seccion .skill .skill-extra-info {
+            margin-left: 15px;
+            margin-right: 15px;
+            padding: 10px 15px 15px 15px;
+            width: calc(100% - 60px);
+            height: max-content;
+            background-color: #2B2B2B;
+            border-radius: 0px 0px 15px 15px;
+            box-shadow: 0px 0px 0px -9px rgba(0,0,0,0.75);
         }
 
-        #pagina main #skills .contenido_seccion .skill .skill-info .skill-desc h3 {
-            font-size: 28px;
-            letter-spacing: 1px;
-        }
+            #pagina main #skills .contenido_seccion .skill .skill-extra-info p {
+                text-align: justify;
+            }
 
-        #pagina main #skills .contenido_seccion .skill .skill-info .skill-desc p {
-            line-height: 33px;
-        }
+            #pagina main #skills .contenido_seccion .skill .skill-extra-info ul {
+                margin-left: 15px;
+                margin-top: 5px;
+                list-style-type: none;
+            }
+
+            #pagina main #skills .contenido_seccion .skill .skill-extra-info ul li {
+                letter-spacing: 1px;
+            }
+
+                #pagina main #skills .contenido_seccion .skill .skill-extra-info ul li::before {
+                    content: "\2022";
+                    color: #ff4c60;
+                    font-weight: bold;
+                    display: inline-block;
+                    width: 1em;
+                    margin-left: -1em;
+                }
+
 
     #pagina main #about .contenido_seccion #info_about {
         color: black;
