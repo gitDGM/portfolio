@@ -212,13 +212,63 @@ body {
             }
 
 
+
+    #pagina main #skills .contenido_seccion .skill {
+        height: max-content;
+        margin-bottom: 20px;
+    }
+
+    #pagina main #skills .contenido_seccion .skill .skill-info {
+        height: 80px;
+        background-color: #FFFFFF;
+        box-shadow: 6px 0px 55px -9px rgba(0,0,0,0.75);
+        border-radius: 15px;
+    }
+
+        #pagina main #skills .contenido_seccion .skill .skill-info .skill-icon {
+            height: 100%;
+            width: 60px;
+            background-color: #ff4c60;
+            border-radius: 10px 0px 0px 10px;
+            float: left;
+        }
+
+            #pagina main #skills .contenido_seccion .skill .skill-info .skill-icon i{
+                line-height: 80px;
+                color: #FFFFFF;
+                font-size: 36px;
+                width: 100%;
+                text-align: center;
+            }
+
+        #pagina main #skills .contenido_seccion .skill .skill-info .skill-desc {
+            width: calc(100% - 80px);
+            float: left;
+            padding: 5px 10px 5px 10px;
+            height: calc(100% - 10px);
+        }
+        #pagina main #skills .contenido_seccion .skill .skill-info .skill-desc *  {
+            color: #000000 !important;
+        }
+
+        #pagina main #skills .contenido_seccion .skill .skill-info .skill-desc h3 {
+            font-size: 28px;
+            letter-spacing: 1px;
+        }
+
+        #pagina main #skills .contenido_seccion .skill .skill-info .skill-desc p {
+            line-height: 33px;
+        }
+
     #pagina main #about .contenido_seccion #info_about {
         color: black;
         text-align: justify;
         font-size: 18px;
         margin: 20px 0px;
-        background-color: #FFFFFF;padding: 20px;
+        background-color: #FFFFFF;
+        padding: 20px;
         border-radius: 8px 8px 8px 8px;
+        box-shadow: 6px 0px 55px -9px rgba(0,0,0,0.75);
     }
 
         #pagina main #about .contenido_seccion #info_about img {
