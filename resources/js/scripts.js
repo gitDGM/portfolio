@@ -16,7 +16,7 @@ window.onload = function () {
         console.log(estado);
         if (estado.value == 0) {
             estado.value = 1;
-            infoSkill.style.maxHeight = "250px";            
+            infoSkill.style.maxHeight = "500px";            
             infoSkill.style.padding = "10px 15px";
             /*
             let alturaMax = infoSkill.offsetHeight;
