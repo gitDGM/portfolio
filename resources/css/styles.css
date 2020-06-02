@@ -285,6 +285,7 @@ body {
 
             #pagina main #skills .contenido_seccion .skill .skill-extra-info p {
                 text-align: justify;
+                letter-spacing: 1px;
             }
 
             #pagina main #skills .contenido_seccion .skill .skill-extra-info ul {
@@ -382,6 +383,7 @@ body {
     
             #pagina main #experience .contenido_seccion .company .company-extra-info p {
                 text-align: justify;
+                letter-spacing: 1px;
             }
 
             #pagina main #experience .contenido_seccion .company .company-extra-info ul {
