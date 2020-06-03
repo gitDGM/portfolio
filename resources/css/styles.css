@@ -261,6 +261,17 @@ body {
                 padding: 10px;
                 margin: 2px;
             }
+
+            #pagina main #projects .contenido_seccion .project .project-header .project-header-controller .controller i{
+                font-size: 35px;
+            }
+
+        #pagina main #projects .contenido_seccion .project .project-header .slider-level{
+            position: absolute;
+            width: 50%;
+        }
+
+            
     
     #pagina main #projects .contenido_seccion .project .project-content {
         margin-top: 10px;
@@ -680,6 +691,19 @@ footer .madeby {
         width: 50%;
     }
 
+    #pagina main #projects .contenido_seccion {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #pagina main #projects .contenido_seccion .project {
+        width: calc(50% - 20px);
+        margin: 10px;
+    }
+
+    #pagina main #projects .contenido_seccion .project .project-header .project-header-controller .controller i {
+    }
+
     #pagina main #skills .contenido_seccion {
         flex-direction: row;
         flex-wrap: wrap;
@@ -724,22 +748,17 @@ footer .madeby {
 
 @media screen and (min-width: 1500px) {
 
-    #pagina main #skills .contenido_seccion {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
     #pagina main #skills .contenido_seccion .skill {
         width: calc(33.3333% - 20px);
         margin: 10px;
     }
 
-    #pagina main #experience .contenido_seccion {
-        flex-direction: row;
-        flex-wrap: wrap;
+    #pagina main #experience .contenido_seccion .company {
+        width: calc(33.3333% - 20px);
+        margin: 10px;
     }
 
-    #pagina main #experience .contenido_seccion .company {
+    #pagina main #projects .contenido_seccion .project {
         width: calc(33.3333% - 20px);
         margin: 10px;
     }
