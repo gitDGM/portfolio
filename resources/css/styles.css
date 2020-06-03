@@ -266,10 +266,28 @@ body {
                 font-size: 35px;
             }
 
-        #pagina main #projects .contenido_seccion .project .project-header .slider-level{
+        #pagina main #projects .contenido_seccion .project .project-header .slider-levels {
             position: absolute;
+            bottom: 10px;
+            left: 25%;
             width: 50%;
+            height: 5px;
         }
+
+            #pagina main #projects .contenido_seccion .project .project-header .slider-levels ul {
+                list-style-type: none;
+                display: flex;
+                width: 100%;
+                height: 100%;
+                justify-content: center;
+            }
+
+                #pagina main #projects .contenido_seccion .project .project-header .slider-levels ul li {
+                    height: 100%;
+                    background-color: #ffffff;
+                    width: 50px;
+                    margin: 0px 5px;
+                }
 
             
     

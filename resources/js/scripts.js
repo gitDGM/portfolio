@@ -54,13 +54,16 @@ window.onload = function () {
         let n = parseInt(clicked.parentElement.parentElement.dataset.slider);
         n = n + m;
         let x = clicked.parentElement.parentElement.querySelectorAll("img");
+        let l = clicked.parentElement.parentElement.lastElementChild.children[0].children;
         if (n >= x.length) { n = 0 }
         if (n < 0) { n = x.length - 1 };
         console.log(n);
         for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";
+            l[i].style.backgroundColor = "#FFFFFF";
         }
         x[n].style.display = "block";
+        l[n].style.backgroundColor = "#ff4c60";
         clicked.parentElement.parentElement.dataset.slider = n;
     }
 
