@@ -32,6 +32,7 @@ html, body, #pagina {
 
 body {
     background-image: url(../images/fondo.jpg);
+    overflow-x: hidden;
 }
 
 #pagina #cabecera {
@@ -215,7 +216,91 @@ body {
                 color: #1e1e1e;
             }
 
+    /* INICIO PROJECTS */
+    
+    #pagina main #projects .contenido_seccion .project {
+        width: 100%;
+        padding: 20px 0px;
+        background-color: #3a3a3a;
+        margin-bottom: 20px;
+        border-radius: 15px;
+    }
 
+        #pagina main #projects .contenido_seccion .project .project-header {
+            width: 100%;
+            position: relative;
+        }
+
+            #pagina main #projects .contenido_seccion .project .project-header img {
+                width: 100%;
+                display: block;
+            }
+
+            #pagina main #projects .contenido_seccion .project .project-header .project-header-controller {
+                background-color: rgba(0, 0, 0, 0.5);
+                position: absolute;
+                top: 0px;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                
+                
+            }
+
+            #pagina main #projects .contenido_seccion .project .project-header .project-header-controller h3 {
+                color: #FFFFFF;
+                font-size: 24px;
+                letter-spacing: 1px;
+                width: 50%;
+                text-align: center;
+            }
+
+            #pagina main #projects .contenido_seccion .project .project-header .project-header-controller .controller {
+                padding: 10px;
+                margin: 2px;
+            }
+    
+    #pagina main #projects .contenido_seccion .project .project-content {
+        margin-top: 10px;
+        padding: 0px 10px;
+    }
+
+        #pagina main #projects .contenido_seccion .project .project-content * {
+            letter-spacing: 1px;
+        }
+
+        #pagina main #projects .contenido_seccion .project .project-content h3 {
+            margin-bottom: 5px;
+            font-size: 22px;
+        }
+
+        #pagina main #projects .contenido_seccion .project .project-content p {
+            text-align: justify;
+        }
+
+        #pagina main #projects .contenido_seccion .project .project-content ul {
+            margin-left: 15px;
+            margin-top: 5px;
+            list-style-type: none;
+        }
+
+            #pagina main #projects .contenido_seccion .project .project-content ul li{
+                letter-spacing: 1px;
+            }
+
+            #pagina main #projects .contenido_seccion .project .project-content ul li::before {
+                content: "\2022";
+                color: #ff4c60;
+                font-weight: bold;
+                display: inline-block;
+                width: 1em;
+                margin-left: -1em;
+            }
+
+
+    /* FIN PROJECTS */
 
     /* INCIO SKILL */
 
