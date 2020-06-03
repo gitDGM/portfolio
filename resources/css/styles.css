@@ -262,6 +262,10 @@ body {
                 margin: 2px;
             }
 
+                #pagina main #projects .contenido_seccion .project .project-header .project-header-controller .controller:hover {
+                    cursor: pointer;
+                }
+
             #pagina main #projects .contenido_seccion .project .project-header .project-header-controller .controller i{
                 font-size: 35px;
             }
