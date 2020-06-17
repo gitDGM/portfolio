@@ -16,16 +16,6 @@ window.onload = function () {
         }
     }
 
-
-
-    let skillsArray = document.querySelectorAll('#pagina main #skills .contenido_seccion .skill');
-
-    for (let i = 0; i < skillsArray.length; i++) {
-        skillsArray[i].onclick = function () {
-            toggleInfo(this);
-        }
-    }
-
     let companyArray = document.querySelectorAll('#pagina main #experience .contenido_seccion .company');
 
     for (let i = 0; i < companyArray.length; i++) {
