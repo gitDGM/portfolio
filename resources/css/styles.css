@@ -533,6 +533,59 @@ body {
 
     /* FIN EXPERIENCE */
     
+    /* INICIO TITULACIONES */
+
+    #pagina main #titulaciones .contenido_seccion .titulacion {
+        height: max-content;
+        margin-bottom: 20px;
+    }
+
+        #pagina main #titulaciones .contenido_seccion .titulacion .titulacion-info {
+            height: 80px;
+            background-color: #FFFFFF;
+            border-radius: 15px;
+        }
+
+        #pagina main #titulaciones .contenido_seccion .titulacion .titulacion-info .titulacion-icon {
+            height: 100%;
+            width: 80px;
+            background-color: #ff4c60;
+            border-radius: 10px 0px 0px 10px;
+            float: left;
+            white-space: nowrap;            
+            text-align: center;
+        }
+
+            #pagina main #titulaciones .contenido_seccion .titulacion .titulacion-info .titulacion-icon i{
+                line-height: 80px;
+                color: #FFFFFF;
+                font-size: 50px;
+                width: 100%;
+                text-align: center;
+            }
+
+        #pagina main #titulaciones .contenido_seccion .titulacion .titulacion-info .titulacion-desc {
+            width: calc(100% - 110px);
+            float: left;
+            padding: 5px 10px 5px 10px;
+            height: calc(100% - 10px);
+            overflow: hidden;
+            display: flex;
+        }
+
+            #pagina main #titulaciones .contenido_seccion .titulacion .titulacion-info .titulacion-desc *  {
+                color: #000000 !important;
+            }
+
+            #pagina main #titulaciones .contenido_seccion .titulacion .titulacion-info .titulacion-desc h3 {
+                font-size: 14px;
+                letter-spacing: 1px;
+                margin: auto;
+            }
+
+    /* FIN TITULACIONES */
+
+
     #pagina main #about .contenido_seccion #info_about {
         color: black;
         text-align: justify;
@@ -654,8 +707,23 @@ footer .madeby {
     #pagina main #skills .contenido_seccion .skill:nth-of-type(3) .skill-info .skill-desc p, #pagina main #skills .contenido_seccion .skill:nth-of-type(6) .skill-info .skill-desc p {
         line-height: 39px;
     }
+    #pagina main #titulaciones .contenido_seccion .titulacion .titulacion-info .titulacion-desc h3 {
+        font-size: 14px;
+    } 
 }
 
+
+@media screen and (min-width: 600px) {
+    #pagina main #titulaciones .contenido_seccion .titulacion .titulacion-info .titulacion-desc h3 {
+        font-size: 20px;
+    } 
+}
+
+@media screen and (min-width: 800px) {
+    #pagina main #titulaciones .contenido_seccion .titulacion .titulacion-info .titulacion-desc h3 {
+        font-size: 20px;
+    } 
+}
 
 @media screen and (min-width: 1000px) {
     body::-webkit-scrollbar {
@@ -754,6 +822,15 @@ footer .madeby {
         font-size: 1em;
     }
 
+    #pagina main #titulaciones .contenido_seccion {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #pagina main #titulaciones .contenido_seccion .titulacion {
+        width: calc(50% - 20px);
+        margin: 10px;
+    } 
 
     #pagina main #about .contenido_seccion {
         width: 60%;
