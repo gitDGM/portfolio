@@ -332,6 +332,15 @@ body {
                 margin-left: -1em;
             }
 
+        #pagina main #projects .contenido_seccion .project .project-content .project-web{
+            text-align: center;
+            margin: 10px 0px;
+        }
+
+            #pagina main #projects .contenido_seccion .project .project-content .project-web a{
+                color:#ff4c60 !important;
+            }
+
 
     /* FIN PROJECTS */
 
